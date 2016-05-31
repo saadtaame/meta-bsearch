@@ -9,7 +9,7 @@ int bsearch(vector<int> A, int k) {
     int n = (int)A.size();
 
     int lg = 0;
-    while((1 << lg) < n)
+    while((1 << lg) < n - 1)
         lg += 1;
 
     int pos = 0;
